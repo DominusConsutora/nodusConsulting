@@ -30,7 +30,7 @@ Extendió TRAINFORTRADE a más de 650 profesionales, impulsó el subprograma Pue
 export default function FounderPage() {
   return (
     <main>
-      <header className={styles.header}><Link href="/" className={styles.brand} aria-label="NODUS, inicio"><Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={170} height={60} priority /></Link><nav className={styles.nav} aria-label="Navegación principal"><Link href="/nosotros">Sobre nosotros</Link><Link href="/#servicios">Servicios</Link><Link href="/#contacto" className={styles.navContact}>Contacto <span aria-hidden="true">↗</span></Link></nav></header>
+      <header className={styles.header}><Link href="/" className={styles.brand} aria-label="NODUS, inicio"><Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={170} height={60} priority /></Link><nav className={styles.nav} aria-label="Navegación principal"><Link href="/">Inicio</Link><Link href="/nosotros">Quiénes somos</Link><Link href="/servicios">Servicios</Link><Link href="/#metodo">Método</Link><Link href="/blog">Blog</Link><Link href="/#contacto" className={styles.navContact}>Contacto <span aria-hidden="true">↗</span></Link></nav></header>
 
       <section className={styles.profileHero}><Link href="/nosotros" className={styles.backLink}>← Volver a Sobre Nosotros</Link><div className={styles.profileHeroGrid}><div><p className={styles.kicker}>NODUS CONSULTING <span>/</span> FOUNDER</p><h1>Diego <em>Salom.</em></h1><p className={styles.role}>Fundador de NODUS / Consultor de UNCTAD en Argentina</p></div><Image src="/brand/diego-salom-recorte.png" alt="Diego Salom, fundador de NODUS" width={460} height={550} priority /></div></section>
 

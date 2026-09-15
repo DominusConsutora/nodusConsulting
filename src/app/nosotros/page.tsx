@@ -32,7 +32,7 @@ const advantages = ["Oficio portuario y conocimiento del sector", "Experiencia c
 export default function NosotrosPage() {
   return (
     <main>
-      <header className={styles.header}><Link href="/" className={styles.brand} aria-label="NODUS, inicio"><Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={170} height={60} priority /></Link><nav className={styles.nav} aria-label="Navegación principal"><Link href="/#firma">La firma</Link><Link href="/#servicios">Servicios</Link><Link href="/#metodo">Método</Link><Link className={styles.navContact} href="/#contacto">Contacto <span aria-hidden="true">↗</span></Link></nav></header>
+      <header className={styles.header}><Link href="/" className={styles.brand} aria-label="NODUS, inicio"><Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={170} height={60} priority /></Link><nav className={styles.nav} aria-label="Navegación principal"><Link href="/">Inicio</Link><Link href="/nosotros">Quiénes somos</Link><Link href="/servicios">Servicios</Link><Link href="/#metodo">Método</Link><Link href="/blog">Blog</Link><Link className={styles.navContact} href="/#contacto">Contacto <span aria-hidden="true">↗</span></Link></nav></header>
 
       <section className={styles.pageHero}><p className={styles.kicker}>NODUS CONSULTING <span>/</span> INSTITUCIONAL</p><h1>Una consultora portuaria con mirada <em>estratégica.</em></h1><p>Trabajamos con quienes planifican, regulan y operan infraestructura crítica en Argentina y Latinoamérica.</p></section>
 
