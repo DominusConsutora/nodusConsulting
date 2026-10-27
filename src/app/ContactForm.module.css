@@ -1,0 +1,42 @@
+.fields {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+.fields:disabled {
+  opacity: .7;
+}
+
+.privacy, .feedback {
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.privacy a, .feedback a {
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+.feedback {
+  border-left: 3px solid var(--accent);
+  margin-top: 20px;
+  padding-left: 12px;
+}
+
+.honeypot {
+  display: none;
+}
+
+.submit:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.submit:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}

@@ -4,8 +4,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Diego Salom | Founder de NODUS",
-  description: "Trayectoria y especialización de Diego Salom, fundador de NODUS y especialista en estrategia, gestión y desarrollo portuario.",
+  title: "Diego Salom | Cofundador de NODUS",
+  description: "Trayectoria y especialización de Diego Salom, cofundador de NODUS y especialista en estrategia, gestión y desarrollo portuario.",
 };
 
 const career = [
@@ -32,7 +32,7 @@ export default function FounderPage() {
     <main>
       <header className={styles.header}><Link href="/" className={styles.brand} aria-label="NODUS, inicio"><Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={170} height={60} priority /></Link><nav className={styles.nav} aria-label="Navegación principal"><Link href="/">Inicio</Link><Link href="/nosotros">Quiénes somos</Link><Link href="/servicios">Servicios</Link><Link href="/#metodo">Método</Link><Link href="/blog">Blog</Link><Link href="/#contacto" className={styles.navContact}>Contacto <span aria-hidden="true">↗</span></Link></nav></header>
 
-      <section className={styles.profileHero}><Link href="/nosotros" className={styles.backLink}>← Volver a Sobre Nosotros</Link><div className={styles.profileHeroGrid}><div><p className={styles.kicker}>NODUS CONSULTING <span>/</span> FOUNDER</p><h1>Diego <em>Salom.</em></h1><p className={styles.role}>Fundador de NODUS / Consultor de UNCTAD en Argentina</p></div><Image src="/brand/diego-salom-recorte.png" alt="Diego Salom, fundador de NODUS" width={460} height={550} priority /></div></section>
+      <section className={styles.profileHero}><Link href="/nosotros" className={styles.backLink}>← Volver a Sobre Nosotros</Link><div className={styles.profileHeroGrid}><div><p className={styles.kicker}>NODUS CONSULTING <span>/</span> COFUNDADOR</p><h1>Diego <em>Salom.</em></h1><p className={styles.role}>Cofundador de NODUS / Consultor de UNCTAD en Argentina</p></div><Image src="/brand/diego-salom-recorte.png" alt="Diego Salom, cofundador de NODUS" width={460} height={550} priority /></div></section>
 
       <section className={styles.bio}><div className={styles.sectionLabel}><span>01</span><span>Perfil</span></div><div className={styles.bioContent}><h2>Experiencia pública, gestión portuaria y cooperación regional.</h2><div><p>Diego Salom desarrolla su carrera en la intersección entre la gestión portuaria, la planificación estratégica y el fortalecimiento institucional. Su experiencia combina responsabilidad ejecutiva, conocimiento de la operación y trabajo con organismos internacionales.</p><p>Como fundador de NODUS, pone esa perspectiva al servicio de autoridades, operadores y terminales que necesitan ordenar decisiones complejas y convertirlas en proyectos viables.</p></div></div></section>
 

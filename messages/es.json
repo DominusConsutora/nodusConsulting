@@ -1,0 +1,30 @@
+{
+  "ContactForm": {
+    "heading": "Iniciemos una conversación",
+    "name": "Nombre y apellido",
+    "namePlaceholder": "Tu nombre",
+    "organization": "Organización",
+    "organizationPlaceholder": "Empresa o institución",
+    "email": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "phone": "Teléfono (opcional)",
+    "phonePlaceholder": "+54 9 ...",
+    "topic": "¿En qué podemos ayudarte?",
+    "topicPlaceholder": "Seleccioná un tema",
+    "topics": ["Estrategia y master plan", "Concesiones y PPP", "Operación de terminales", "Transformación digital", "Sostenibilidad", "Otro desafío"],
+    "message": "Mensaje",
+    "messagePlaceholder": "Contanos brevemente sobre el desafío de tu organización",
+    "privacy": "Usaremos tus datos para responder esta consulta. No incluyas información sensible.",
+    "privacyLink": "Política de privacidad",
+    "footer": "Te responderemos para coordinar una primera conversación.",
+    "submit": "Enviar consulta",
+    "sending": "Enviando...",
+    "success": "Recibimos tu consulta. Gracias por contactarnos.",
+    "error": "No pudimos enviar la consulta. Conservamos los campos para que puedas reintentar o escribirnos a",
+    "timeout": "No pudimos confirmar el envío a tiempo. La consulta podría haberse procesado; antes de reenviarla, podés contactarnos en",
+    "rateLimit": "El servicio limitó temporalmente los envíos. Esperá un momento antes de reintentar o escribinos a",
+    "unavailable": "El envío del formulario no está configurado. Escribinos a",
+    "invalid": "Completá los campos obligatorios con información válida.",
+    "website": "Dejá este campo vacío"
+  }
+}

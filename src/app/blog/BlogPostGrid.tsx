@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { blogTopics, getReadingMinutes, getTitleParts, type BlogPost } from "@/data/blogPosts";
+import { blogTopics, formatBlogDate, getReadingMinutes, getTitleParts, type BlogPost } from "@/data/blogPosts";
 import styles from "./content.module.css";
 import filterStyles from "./filter.module.css";
 
@@ -24,7 +24,7 @@ export default function BlogPostGrid({ posts }: BlogPostGridProps) {
         </div>
       </aside>
       <div className={`${styles.postGrid} ${filterStyles.postGrid}`} aria-live="polite">
-        {filteredPosts.length > 0 ? filteredPosts.map((post) => { const titleParts = getTitleParts(post.title); return <article className={styles.post} key={post.slug}><Link href={`/blog/${post.slug}`}><div className={styles.postImage}><Image src={post.heroImage} alt="" fill sizes="(max-width: 760px) 100vw, 33vw" /></div><div className={styles.postMeta}><span>{post.category}</span><span className={styles.postTime}>Tiempo de lectura: {getReadingMinutes(post)} min</span></div><h2><strong className={styles.titleLead}>{titleParts.lead}</strong>{titleParts.remainder && <> {titleParts.remainder}</>}</h2><p>{post.excerpt}</p><span className={styles.readLink}>Leer artículo <span aria-hidden="true">↗</span></span></Link></article>; }) : <p className={filterStyles.emptyState}>Todavía no publicamos notas sobre este eje. Estamos preparando nuevos contenidos.</p>}
+        {filteredPosts.length > 0 ? filteredPosts.map((post) => { const titleParts = getTitleParts(post.title); return <article className={styles.post} key={post.slug}><Link href={`/blog/${post.slug}`}><div className={styles.postImage}><Image src={post.heroImage} alt="" fill sizes="(max-width: 760px) 100vw, 33vw" /></div><div className={styles.postMeta}><span>{post.category}</span><span>{formatBlogDate(post.date)}</span><span className={styles.postTime}>{getReadingMinutes(post)} min de lectura</span></div><h2><strong className={styles.titleLead}>{titleParts.lead}</strong>{titleParts.remainder && <> {titleParts.remainder}</>}</h2><p className={styles.postAuthor}>{post.author}</p><p>{post.excerpt}</p><span className={styles.readLink}>Leer artículo <span aria-hidden="true">↗</span></span></Link></article>; }) : <p className={filterStyles.emptyState}>Todavía no publicamos notas sobre este eje. Estamos preparando nuevos contenidos.</p>}
       </div>
     </div>
   );

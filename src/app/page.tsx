@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getReadingMinutes, getSortedPosts, getTitleParts } from "@/data/blogPosts";
+import { formatBlogDate, getReadingMinutes, getSortedPosts, getTitleParts } from "@/data/blogPosts";
 import { services } from "@/data/services";
 import styles from "./page.module.css";
 import blogStyles from "./blogPreview.module.css";
+import ContactForm from "./ContactForm";
+import { contact } from "@/data/contact";
 
 export default function Home() {
   const latestPosts = getSortedPosts().slice(0, 3);
@@ -24,11 +26,47 @@ export default function Home() {
 
       <section id="servicios" className={styles.services}><div className={styles.sectionLabel}><span>02</span><span>Servicios</span></div><div className={styles.servicesIntro}><h2>Capacidades para cada etapa del sistema portuario.</h2><p>Desde la definición de una estrategia hasta la mejora de una operación existente.</p></div><div className={styles.serviceList}>{services.map((service) => <Link className={styles.service} href={`/servicios/${service.slug}`} key={service.slug}><span className={styles.serviceNumber}>{service.number}</span><h3>{service.title}</h3><p>{service.shortDescription}</p><span className={styles.serviceArrow} aria-hidden="true">↗</span></Link>)}</div><div className={styles.firmContent}><Link className={styles.firmButton} href="/servicios">Ver más servicios <span aria-hidden="true">↗</span></Link></div></section>
 
-      <section className={blogStyles.blogPreview}><div className={blogStyles.sectionLabel}><span>03</span><span>Blog</span></div><div className={blogStyles.previewIntro}><div><h2>Notas para pensar el presente y proyectar el próximo puerto.</h2><p>Análisis y perspectivas sobre planificación, operación y sostenibilidad portuaria.</p></div><Link className={blogStyles.blogButton} href="/blog">Ver todas las notas <span aria-hidden="true">↗</span></Link></div><div className={blogStyles.previewGrid}>{latestPosts.map((post) => { const titleParts = getTitleParts(post.title); return <article className={blogStyles.previewCard} key={post.slug}><Link href={`/blog/${post.slug}`}><div className={blogStyles.previewImage}><Image src={post.heroImage} alt="" fill sizes="(max-width: 760px) 100vw, 33vw" /></div><div className={blogStyles.previewMeta}><span>{post.category}</span><span>{getReadingMinutes(post)} min de lectura</span></div><h3><strong className={blogStyles.titleLead}>{titleParts.lead}</strong>{titleParts.remainder && <> {titleParts.remainder}</>}</h3><p>{post.excerpt}</p><span className={blogStyles.readMore}>Leer nota <span aria-hidden="true">↗</span></span></Link></article>; })}</div></section>
+      <section className={blogStyles.blogPreview}>
+        <div className={blogStyles.sectionLabel}><span>03</span><span>Blog</span></div>
+        <div className={blogStyles.previewIntro}>
+          <div>
+            <h2>Notas para pensar el presente y proyectar el próximo puerto.</h2>
+            <p>Análisis y perspectivas sobre planificación, operación y sostenibilidad portuaria.</p>
+          </div>
+          <Link className={blogStyles.blogButton} href="/blog">Ver todas las notas <span aria-hidden="true">↗</span></Link>
+        </div>
+        <div className={blogStyles.previewGrid}>
+          {latestPosts.map((post) => {
+            const titleParts = getTitleParts(post.title);
+
+            return (
+              <article className={blogStyles.previewCard} key={post.slug}>
+                <Link href={`/blog/${post.slug}`}>
+                  <div className={blogStyles.previewImage}>
+                    <Image src={post.heroImage} alt="" fill sizes="(max-width: 760px) 100vw, 33vw" />
+                  </div>
+                  <div className={blogStyles.previewMeta}>
+                    <span>{post.category}</span>
+                    <span>{formatBlogDate(post.date)}</span>
+                    <span>{getReadingMinutes(post)} min de lectura</span>
+                  </div>
+                  <h3>
+                    <strong className={blogStyles.titleLead}>{titleParts.lead}</strong>
+                    {titleParts.remainder && <> {titleParts.remainder}</>}
+                  </h3>
+                  <p className={blogStyles.postAuthor}>{post.author}</p>
+                  <p>{post.excerpt}</p>
+                  <span className={blogStyles.readMore}>Leer nota <span aria-hidden="true">↗</span></span>
+                </Link>
+              </article>
+            );
+          })}
+        </div>
+      </section>
 
       <section id="metodo" className={styles.method}><div className={styles.sectionLabel}><span>04</span><span>Método</span></div><div className={styles.methodContent}><h2>Claridad para decidir.<br /><em>Criterio para implementar.</em></h2><div className={styles.methodSteps}><div><span>01</span><strong>Entender</strong><p>Analizamos contexto, actores, restricciones y oportunidades.</p></div><div><span>02</span><strong>Diseñar</strong><p>Convertimos evidencia en escenarios y recomendaciones concretas.</p></div><div><span>03</span><strong>Activar</strong><p>Acompañamos la ejecución para que la estrategia produzca resultados.</p></div></div></div></section>
 
-      <section id="contacto" className={styles.contact}><div className={styles.contactHeader}><p className={styles.kicker}>NODUS CONSULTING <span>/</span> CONTACTO</p><h2>El próximo paso empieza con una buena conversación.</h2><p className={styles.contactIntro}>Contanos qué desafío tiene hoy tu organización. Podemos ayudarte a ordenar el problema, evaluar alternativas y construir un camino viable para avanzar.</p><div className={styles.contactDetails}><a href="mailto:hola@nodus.com.ar">hola@nodus.com.ar <span aria-hidden="true">↗</span></a><span>Argentina / Latinoamérica</span><span>Consultoría portuaria estratégica</span></div></div><form className={styles.contactForm}><div className={styles.formHeading}><span>01</span><p>Iniciemos una conversación</p></div><div className={styles.formRow}><label>Nombre y apellido<input type="text" name="name" placeholder="Tu nombre" /></label><label>Organización<input type="text" name="organization" placeholder="Empresa o institución" /></label></div><div className={styles.formRow}><label>Email<input type="email" name="email" placeholder="tu@email.com" /></label><label>Teléfono <span>(opcional)</span><input type="tel" name="phone" placeholder="+54 9 ..." /></label></div><label>¿En qué podemos ayudarte?<select name="topic" defaultValue=""><option value="" disabled>Seleccioná un tema</option><option value="strategy">Estrategia y master plan</option><option value="concessions">Concesiones y PPP</option><option value="operations">Operación de terminales</option><option value="digital">Transformación digital</option><option value="sustainability">Sostenibilidad</option><option value="other">Otro desafío</option></select></label><label>Mensaje<textarea name="message" placeholder="Contanos brevemente sobre el desafío de tu organización" rows={4} /></label><div className={styles.formFooter}><p>Te responderemos para coordinar una primera conversación.</p><button type="button">Enviar consulta <span aria-hidden="true">↗</span></button></div></form></section>
+      <section id="contacto" className={styles.contact}><div className={styles.contactHeader}><p className={styles.kicker}>NODUS CONSULTING <span>/</span> CONTACTO</p><h2>El próximo paso empieza con una buena conversación.</h2><p className={styles.contactIntro}>Contanos qué desafío tiene hoy tu organización. Podemos ayudarte a ordenar el problema, evaluar alternativas y construir un camino viable para avanzar.</p><div className={styles.contactDetails}><a href={`mailto:${contact.email}`}>{contact.email} <span aria-hidden="true">↗</span></a><span>Argentina / Latinoamérica</span><span>Consultoría portuaria estratégica</span></div></div><ContactForm /></section>
       <footer className={styles.footer}><Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={135} height={48} /><span>Consultoría portuaria estratégica</span><span>© 2025 NODUS</span></footer>
     </main>
   );

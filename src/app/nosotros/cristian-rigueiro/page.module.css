@@ -1,0 +1,15 @@
+.avatar {
+  border-radius: 48% 48% 0 0;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  width: 246px;
+}
+
+@media (max-width: 760px) {
+  .avatar {
+    height: 280px;
+    margin-top: 28px;
+    width: 215px;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ContactForm": {
+    "heading": "Let's start a conversation",
+    "name": "Full name",
+    "namePlaceholder": "Your name",
+    "organization": "Organization",
+    "organizationPlaceholder": "Company or institution",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "phone": "Phone (optional)",
+    "phonePlaceholder": "+54 9 ...",
+    "topic": "How can we help?",
+    "topicPlaceholder": "Select a topic",
+    "topics": ["Strategy and master planning", "Concessions and PPP", "Terminal operations", "Digital transformation", "Sustainability", "Another challenge"],
+    "message": "Message",
+    "messagePlaceholder": "Briefly describe your organization's challenge",
+    "privacy": "We will use your details to respond to this inquiry. Do not include sensitive information.",
+    "privacyLink": "Privacy policy",
+    "footer": "We will reply to arrange an initial conversation.",
+    "submit": "Send inquiry",
+    "sending": "Sending...",
+    "success": "We received your inquiry. Thank you for contacting us.",
+    "error": "We could not send your inquiry. Your entries are preserved so you can retry or email us at",
+    "timeout": "We could not confirm the send in time. Your inquiry may have been processed; before resending, you can contact us at",
+    "rateLimit": "The service temporarily limited submissions. Wait a moment before retrying or email us at",
+    "unavailable": "Form delivery is not configured. Email us at",
+    "invalid": "Complete the required fields with valid information.",
+    "website": "Leave this field empty"
+  }
+}
