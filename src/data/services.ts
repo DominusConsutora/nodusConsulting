@@ -14,7 +14,7 @@ export const services: Service[] = [
     slug: "master-plans-portuarios",
     number: "01",
     title: "Master plans portuarios",
-    shortDescription: "Visión, escenarios de demandaAAAAAAAA y hojas de ruta para orientar la evolución de cada puerto.",
+    shortDescription: "Visión, escenarios de demanda y hojas de ruta para orientar la evolución de cada puerto.",
     intro: "Diseñamos planes maestros que conectan la estrategia portuaria con el territorio, la infraestructura disponible y las oportunidades reales de crecimiento.",
     approach: "Partimos de una lectura integral del sistema: cargas, accesos, actores, restricciones ambientales y capacidad institucional. A partir de esa base, construimos escenarios comparables y una secuencia de decisiones que pueda sostenerse en el tiempo.",
     deliverables: ["Diagnóstico estratégico y territorial", "Proyección de demanda y escenarios de crecimiento", "Alternativas de infraestructura y operación", "Hoja de ruta priorizada con etapas e indicadores"],
