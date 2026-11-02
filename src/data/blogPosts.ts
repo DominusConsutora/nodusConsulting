@@ -207,6 +207,83 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "puerto-digital-puerto-inteligente",
+    category: "Transformación digital",
+    title: "Del puerto digital al puerto inteligente: qué significa realmente digitalizar una comunidad portuaria",
+    excerpt:
+      "Digitalizar un puerto no es incorporar tecnología: es decidir cómo se coordinan las personas, las instituciones y la información que hacen posible la operación.",
+    author: "Diego Salom · Cofundador de NODUS",
+    date: "2026-11-05",
+    heroImage: "/images/blog/puerto-digital-puerto-inteligente.webp",
+    tags: ["Transformación digital", "PCS", "Gobernanza"],
+    body: [],
+    sections: [
+      {
+        heading: "Una conversación que suele empezar por el lugar equivocado",
+        paragraphs: [
+          "Cuando se habla de modernizar un puerto, la conversación casi siempre arranca por la herramienta: qué sistema comprar, qué plataforma implementar, qué tecnología incorporar. Son preguntas comprensibles, pero llegan demasiado pronto.",
+          "Un puerto no es una terminal ni un software. Es una comunidad de actores —autoridad portuaria, terminales, navieras, agentes, transportistas, despachantes, aduana y organismos de control— que dependen unos de otros para que una carga se mueva. Digitalizar esa comunidad significa, ante todo, cambiar la forma en que esos actores comparten información y toman decisiones. La tecnología es el medio. El resultado que importa es un sistema que funcione con menos fricción, más previsibilidad y reglas más claras.",
+        ],
+      },
+      {
+        heading: "Tres capas que se complementan, no se sustituyen",
+        paragraphs: [
+          "El ecosistema digital de un puerto suele describirse con siglas que a menudo se confunden. Conviene distinguirlas, porque cada una resuelve un problema distinto.",
+          "El TOS (Terminal Operating System) es el sistema de gestión de la operación dentro de la terminal: planificación del buque y del patio, control de equipos, gestión de entregas y recepciones. Ordena lo que ocurre puertas adentro. Una terminal puede tener un TOS excelente y, aun así, depender de papeles, llamadas y planillas para coordinarse con quienes están afuera.",
+          "El PCS (Port Community System) es la plataforma que conecta a la comunidad portuaria. Su función es el intercambio ordenado de información entre actores que de otro modo se comunican de forma bilateral y fragmentada: una misma información cargada una sola vez, disponible para quienes la necesitan, con estados y eventos visibles para todos. Es la infraestructura de coordinación del puerto.",
+          "La ventanilla única conecta a la comunidad con el Estado. Permite que operadores y usuarios presenten la información requerida por los distintos organismos de control a través de un único punto de entrada, en lugar de repetir trámites ante cada uno. Su valor no es solo tecnológico: obliga a revisar, armonizar y simplificar procedimientos que durante años se superpusieron.",
+          "Estas tres capas no compiten entre sí. Se complementan, y su valor aparece cuando están pensadas como parte de una misma arquitectura, con interfaces claras y datos que circulan sin reingresos manuales.",
+        ],
+      },
+      {
+        heading: "Trazabilidad: saber qué pasa, cuándo y con quién",
+        paragraphs: [
+          "La trazabilidad suele presentarse como una función de seguimiento de la carga. Es más que eso: es la capacidad de reconstruir, con información confiable, qué ocurrió en cada etapa de un proceso, quién intervino y cuánto tiempo tomó.",
+          "Ese registro tiene un valor enorme. Permite identificar dónde se generan las demoras, comparar el desempeño de distintas etapas, dar previsibilidad a los usuarios y fundamentar decisiones con datos y no con percepciones. Un puerto que no puede medir sus procesos difícilmente pueda mejorarlos; uno que los mide con información compartida puede discutir sus problemas con evidencia.",
+          "Pero la trazabilidad solo es útil si los datos son consistentes. Eso exige definiciones comunes, eventos estandarizados y acuerdos sobre quién registra qué y en qué momento.",
+        ],
+      },
+      {
+        heading: "La integración de actores es un desafío institucional",
+        paragraphs: [
+          "La parte más difícil de digitalizar una comunidad portuaria rara vez es técnica. Es lograr que actores con intereses, ritmos y capacidades diferentes acuerden cómo compartir información.",
+          "Aparecen preguntas que ninguna plataforma responde por sí sola. ¿Quién lidera el proyecto y con qué legitimidad? ¿Quién es el propietario de los datos y quién puede acceder a ellos? ¿Cómo se protege la información comercial sensible? ¿Cómo se financia y sostiene el sistema en el tiempo? ¿Qué pasa con los actores con menor capacidad tecnológica? ¿Qué procesos se rediseñan, y cuáles simplemente se trasladan a una pantalla?",
+          "Digitalizar un proceso ineficiente solo produce un proceso ineficiente más rápido. Por eso los proyectos más sólidos empiezan por entender y simplificar el flujo, y recién después lo traducen a un sistema.",
+        ],
+      },
+      {
+        heading: "Sin gobernanza, la tecnología no escala",
+        paragraphs: [
+          "Detrás de cada plataforma portuaria que funciona hay una decisión de gobernanza: un esquema claro de roles, un modelo de neutralidad, reglas de uso, criterios de acceso a la información y un mecanismo para resolver diferencias entre los participantes.",
+          "Sin ese marco, los sistemas tienden a repetir la fragmentación que querían resolver: plataformas paralelas, datos duplicados, estándares incompatibles y adopción parcial. Con él, la tecnología se vuelve una infraestructura compartida y no un conjunto de soluciones aisladas.",
+          "Por eso la transformación digital portuaria es, en el fondo, una agenda de gobernanza. Define quién coordina, bajo qué reglas y con qué incentivos; y recién entonces qué herramientas lo sostienen.",
+        ],
+      },
+      {
+        heading: "Medir para saber si funcionó",
+        paragraphs: [
+          "Una iniciativa digital se justifica por lo que cambia en la operación, no por lo que incorpora. Los indicadores deberían estar definidos desde el inicio: tiempos de permanencia de la carga, tiempos de trámite, tiempos de atención en accesos, previsibilidad de los procesos, costos para los usuarios, nivel de adopción por parte de los actores.",
+          "Esa disciplina evita uno de los riesgos más frecuentes: proyectos que se evalúan por su grado de avance técnico y no por su efecto sobre la eficiencia del puerto.",
+        ],
+      },
+      {
+        heading: "De la digitalización a un puerto inteligente",
+        paragraphs: [
+          "Se suele decir que un puerto es «inteligente» por la cantidad de tecnología que utiliza. Nuestra mirada es otra. Un puerto inteligente es aquel que cuenta con información confiable, compartida y a tiempo, y que la usa para coordinar mejor, anticipar problemas y decidir con mayor criterio.",
+          "La inteligencia no está en el dispositivo: está en la calidad de las decisiones que el sistema permite tomar. Y esas decisiones dependen de procesos bien diseñados, datos consistentes y actores que confían en compartirlos. La innovación tecnológica puede potenciar ese esquema, pero no lo reemplaza.",
+        ],
+      },
+      {
+        heading: "Cómo lo abordamos en NODUS",
+        paragraphs: [
+          "En NODUS entendemos la transformación digital portuaria como un proyecto de sistema, no de producto. Acompañamos a autoridades y operadores a partir de un diagnóstico de procesos y actores, para definir qué problemas se quiere resolver, qué arquitectura de TOS, PCS y ventanilla única tiene sentido para cada realidad, qué modelo de gobernanza la sostiene y cómo se implementa por etapas, con responsables, inversiones, plazos y riesgos.",
+          "No hay una receta única. Cada puerto tiene su estructura institucional, su nivel de madurez y su comunidad. Lo que sí es común es el punto de partida: antes de elegir una tecnología, conviene preguntarse qué decisiones se necesita mejorar y quiénes deben participar para lograrlo.",
+          "El puerto digital es una etapa necesaria. El puerto inteligente es lo que ocurre cuando esa información se transforma, de manera sostenida, en mejor coordinación, mayor eficiencia y servicios más confiables.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const blogTopics = [
