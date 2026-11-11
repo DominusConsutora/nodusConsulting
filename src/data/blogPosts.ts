@@ -284,6 +284,80 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "capacitacion-retencion-talento-portuario",
+    category: "Capacitación",
+    title: "Las personas son la infraestructura que no figura en el balance: capacitar y retener talento en el sector portuario y logístico",
+    excerpt:
+      "Un puerto se mide en metros de muelle, grúas y calado. Pero lo que decide si esa infraestructura rinde o no son las personas que la planifican, la operan, la regulan y la coordinan todos los días.",
+    author: "Diego Salom · Cofundador de NODUS",
+    date: "2026-11-19",
+    heroImage: "/images/blog/capacitacion-retencion-talento.webp",
+    tags: ["Capacitación", "Recursos humanos", "Gobernanza"],
+    body: [],
+    sections: [
+      {
+        heading: "Una inversión que casi siempre llega tarde",
+        paragraphs: [
+          "Cuando un sistema portuario o logístico decide modernizarse, la conversación suele empezar por lo visible: la obra, el equipo, la plataforma. La capacitación aparece después, como un anexo del proyecto o como una respuesta a un problema que ya ocurrió.",
+          "Es una secuencia comprensible, pero costosa. Una terminal puede incorporar el mejor sistema de gestión y seguir operando con fricción si quienes lo usan no entienden la lógica de los procesos que ese sistema representa. Una autoridad puede diseñar un excelente esquema de concesiones y no lograr que se cumpla si el equipo que lo administra no tiene las herramientas para medir, auditar y decidir. La tecnología y la normativa fijan el piso. Las capacidades de las personas determinan hasta dónde se llega.",
+        ],
+      },
+      {
+        heading: "Profesionalizar no es capacitar más: es capacitar mejor",
+        paragraphs: [
+          "Hablar de profesionalización es hablar de algo más exigente que sumar horas de cursos. Implica definir qué competencias necesita realmente cada función, evaluar dónde están las brechas y construir trayectorias que conecten la formación con el desempeño y con la carrera de cada persona.",
+          "En el sector portuario y logístico esto tiene una particularidad: las decisiones cruzan disciplinas. Un planificador debe entender de operación; un operador, de regulación; un gerente comercial, de cadenas logísticas; un funcionario, de eficiencia y servicio al usuario. Los equipos que mejor funcionan no son los que acumulan especialistas aislados, sino los que desarrollan una mirada común sobre el sistema del que forman parte.",
+          "Por eso la formación más valiosa rara vez es genérica. Es la que parte del diagnóstico de la organización, se apoya en casos reales de su entorno y apunta a cambiar la manera en que se toman decisiones, no solo a transmitir información.",
+        ],
+      },
+      {
+        heading: "El costo oculto de no retener",
+        paragraphs: [
+          "Capacitar sin retener es llenar un balde con un agujero. En un sector donde la experiencia se construye durante años, cada salida de una persona clave se lleva consigo conocimiento operativo, relaciones con los demás actores de la comunidad y criterio para resolver lo que ningún manual contempla.",
+          "Ese costo casi nunca figura en una planilla, pero se siente: curvas de aprendizaje que se reinician, procesos que dependen de la memoria de una sola persona, decisiones que se demoran, equipos que pierden continuidad. Y suele agravarse en los momentos de cambio —una nueva concesión, un proceso de digitalización, una reestructuración—, justo cuando más se necesita estabilidad y conocimiento acumulado.",
+        ],
+      },
+      {
+        heading: "Por qué se va el talento",
+        paragraphs: [
+          "La retención suele asociarse únicamente con la remuneración. Es un factor importante, pero rara vez el único. Las personas con trayectoria y buen desempeño suelen irse cuando perciben que no hay un camino claro de crecimiento dentro de la organización; que su aprendizaje se estancó y la formación no acompaña los desafíos de su rol; que sus decisiones no tienen impacto o no son reconocidas; o que la organización no tiene un rumbo definido, o lo cambia sin explicarlo.",
+          "Es decir: cuando no ven futuro profesional en el lugar donde están. La capacitación y la retención no son agendas separadas. Son dos caras de la misma pregunta: ¿qué le ofrece la organización a quien decide quedarse y crecer?",
+        ],
+      },
+      {
+        heading: "Capacitación y retención se refuerzan",
+        paragraphs: [
+          "Una organización que forma a su gente con criterio envía una señal: apuesta por su desarrollo. Y cuando esa formación está atada a trayectorias reales —más responsabilidad, nuevos roles, participación en decisiones—, el vínculo se fortalece. La formación deja de ser un beneficio y pasa a ser parte del proyecto compartido.",
+          "El efecto también opera hacia adentro de los equipos. Cuando varias personas incorporan los mismos criterios y el mismo lenguaje técnico, mejora la coordinación, se reducen los malentendidos entre áreas y el conocimiento deja de depender de individuos para vivir en la organización.",
+          "En comunidades portuarias, donde conviven autoridades, terminales, operadores y organismos de control, esa mirada compartida es un activo colectivo: facilita acuerdos, acelera la adopción de nuevos procesos y hace más previsible el servicio que recibe el usuario.",
+        ],
+      },
+      {
+        heading: "Qué conviene hacer: cuatro decisiones de fondo",
+        paragraphs: [
+          "Diagnosticar antes de formar. Identificar qué funciones son críticas, qué competencias hacen falta y dónde están las brechas. Sin ese punto de partida, la capacitación se vuelve un catálogo.",
+          "Conectar formación con trayectoria. Cada programa debería responder a una pregunta concreta: ¿qué puede hacer esta persona después que no podía hacer antes, y qué camino se le abre en la organización?",
+          "Cuidar el conocimiento crítico. Documentar procesos, armar espacios de transferencia entre generaciones y evitar que la operación dependa de una sola persona.",
+          "Medir lo que cambia. Evaluar la capacitación por su efecto en el desempeño, la calidad del servicio y la permanencia de los equipos, y no por la cantidad de horas dictadas.",
+        ],
+      },
+      {
+        heading: "Una agenda de largo plazo",
+        paragraphs: [
+          "Los sistemas portuarios y logísticos operan en horizontes de décadas: concesiones, master plans, obras que condicionan el futuro de un frente de agua. Sería llamativo que el desarrollo de las personas que van a llevar adelante esas decisiones se pensara en horizontes de meses.",
+          "Planificar la infraestructura sin planificar las capacidades para gestionarla es dejar la mitad del trabajo sin hacer. Un puerto competitivo no es solo el que invierte en obras y tecnología, sino el que invierte, con la misma seriedad, en quienes van a hacerlas funcionar.",
+        ],
+      },
+      {
+        heading: "Cómo lo abordamos en NODUS",
+        paragraphs: [
+          "En NODUS entendemos la capacitación como parte de la estrategia de un sistema portuario, no como una actividad accesoria. Acompañamos a autoridades y operadores a partir de un diagnóstico de capacidades y de la visión de la organización, para definir qué competencias son críticas, cómo se construyen programas de formación pertinentes al contexto de cada puerto y cómo se vincula ese desarrollo con la gobernanza, la planificación y la continuidad de los equipos.",
+          "No hay un programa universal. Cada organización tiene su historia, su estructura y su comunidad. Lo que sí es común es el punto de partida: antes de elegir un curso, conviene preguntarse qué decisiones queremos que nuestra gente esté en condiciones de tomar dentro de cinco años.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const blogTopics = [
