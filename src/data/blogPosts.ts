@@ -358,6 +358,116 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "financiamiento-climatico-proyectos-financiables",
+    category: "Sostenibilidad",
+    title: "Financiamiento climático: por qué los buenos proyectos necesitan mucho más que buenas intenciones",
+    excerpt:
+      "Los fondos climáticos y de cooperación internacional representan una oportunidad para transformar infraestructuras y actividades productivas. Sin embargo, acceder a esos recursos requiere mucho más que una propuesta ambientalmente atractiva: exige solidez técnica, viabilidad financiera, impacto verificable y capacidad de ejecución.",
+    author: "Diego Salom · Cofundador de NODUS",
+    date: "2026-11-24",
+    heroImage: "/images/blog/financiamiento-climatico.webp",
+    tags: ["Sostenibilidad", "Financiamiento", "Cambio climático"],
+    body: [],
+    sections: [
+      {
+        heading: "Más que buenas intenciones",
+        paragraphs: [
+          "La transición hacia modelos de desarrollo más sostenibles requiere inversiones significativas. Los organismos multilaterales, los fondos climáticos y las agencias de cooperación internacional disponen de instrumentos financieros destinados a impulsar proyectos de mitigación, adaptación al cambio climático, eficiencia energética y transformación productiva.",
+          "Sin embargo, existe una diferencia importante entre identificar una oportunidad de financiamiento y conseguir que un proyecto reúna las condiciones necesarias para acceder a ella.",
+          "Los fondos internacionales no financian únicamente buenas intenciones. Evalúan resultados esperados, adicionalidad, viabilidad, capacidad institucional y riesgos. En otras palabras, buscan proyectos capaces de demostrar que los recursos invertidos producirán un impacto concreto, medible y sostenible.",
+          "Esta distinción es particularmente relevante para el sector portuario y logístico, donde las iniciativas de modernización, descarbonización y adaptación climática requieren inversiones de largo plazo, coordinación entre múltiples actores y una planificación rigurosa.",
+        ],
+      },
+      {
+        heading: "Del problema identificado al proyecto financiable",
+        paragraphs: [
+          "Uno de los errores más frecuentes al formular iniciativas de cooperación es comenzar por la solución antes de definir adecuadamente el problema.",
+          "Un proyecto financiable debe partir de un diagnóstico respaldado por evidencia. No alcanza con señalar que una terminal necesita reducir sus emisiones o que una infraestructura portuaria está expuesta a riesgos climáticos. Es necesario cuantificar esas condiciones, identificar sus causas y establecer qué consecuencias tendría no intervenir.",
+          "En el ámbito portuario, esto puede traducirse en inventarios de emisiones, mediciones de consumo energético, evaluaciones de vulnerabilidad climática, análisis de eficiencia operativa o estudios de infraestructura.",
+          "La calidad del diagnóstico condiciona todo lo que viene después: la selección de las intervenciones, la estimación de los costos y la capacidad de justificar la inversión.",
+        ],
+      },
+      {
+        heading: "Siete condiciones para estructurar proyectos con posibilidades de financiamiento",
+        paragraphs: [
+          "Aunque cada instrumento financiero tiene sus propios criterios de elegibilidad y evaluación, existen siete dimensiones que suelen resultar determinantes para estructurar proyectos sólidos.",
+        ],
+      },
+      {
+        heading: "1. Un problema claramente definido y respaldado por evidencia",
+        paragraphs: [
+          "La formulación debe demostrar cuál es el problema, a quién afecta, cuál es su magnitud y por qué requiere una intervención.",
+          "Los diagnósticos técnicos, las líneas de base y la información cuantitativa permiten transformar una necesidad identificada en un problema de inversión fundamentado.",
+        ],
+      },
+      {
+        heading: "2. Impacto y resultados medibles",
+        paragraphs: [
+          "Los objetivos deben traducirse en indicadores verificables. La reducción de emisiones de gases de efecto invernadero, la disminución del consumo energético, la mejora de la eficiencia operativa o el aumento de la resiliencia de una infraestructura son ejemplos de resultados que pueden medirse.",
+          "El financiamiento necesita una referencia inicial, metas cuantificables y mecanismos de seguimiento que permitan evaluar los resultados alcanzados.",
+        ],
+      },
+      {
+        heading: "3. Una teoría de cambio consistente",
+        paragraphs: [
+          "Un proyecto debe explicar cómo las actividades previstas producirán los resultados esperados y cómo estos contribuirán al impacto final.",
+          "Por ejemplo, electrificar equipos de manipulación de cargas puede reducir emisiones locales, pero el impacto climático dependerá también de la matriz energética, la infraestructura disponible y las condiciones de operación.",
+          "La teoría de cambio permite identificar esas relaciones, explicitar los supuestos y evitar que las actividades se confundan con los resultados.",
+        ],
+      },
+      {
+        heading: "4. Capacidad institucional y alianzas estratégicas",
+        paragraphs: [
+          "La ejecución requiere organizaciones con competencias técnicas, administrativas y financieras adecuadas.",
+          "En los proyectos portuarios, esto supone articular autoridades portuarias, operadores privados, organismos públicos, instituciones financieras, universidades y otros actores de la comunidad logística.",
+          "La calidad de estas alianzas contribuye a reducir riesgos de implementación y fortalece la gobernanza del proyecto.",
+        ],
+      },
+      {
+        heading: "5. Sostenibilidad financiera y operativa",
+        paragraphs: [
+          "Una de las preguntas centrales de cualquier evaluación es qué sucederá cuando termine el aporte financiero inicial.",
+          "Los proyectos deben demostrar cómo se sostendrán sus operaciones, cómo se cubrirán los costos de mantenimiento y qué mecanismos permitirán conservar los resultados alcanzados.",
+          "Una infraestructura sostenible no es solamente aquella que se construye con criterios ambientales, sino también aquella que puede mantenerse operativa y financieramente viable a lo largo del tiempo.",
+        ],
+      },
+      {
+        heading: "6. Identificación y gestión de riesgos",
+        paragraphs: [
+          "Los proyectos de infraestructura y sostenibilidad están expuestos a riesgos climáticos, económicos, políticos, regulatorios, tecnológicos e institucionales.",
+          "Identificarlos anticipadamente y establecer medidas de mitigación permite construir propuestas más realistas y confiables.",
+          "La gestión de riesgos no debe ser un apartado formal del documento: debe formar parte de las decisiones de diseño, inversión y ejecución.",
+        ],
+      },
+      {
+        heading: "7. Potencial de escalamiento y replicabilidad",
+        paragraphs: [
+          "Los fondos de cooperación internacional suelen valorar iniciativas capaces de producir aprendizajes y generar beneficios que trasciendan el proyecto individual.",
+          "Un programa piloto de electrificación de equipos portuarios, por ejemplo, puede convertirse en un modelo replicable para otras terminales si demuestra resultados, identifica sus condiciones de aplicación y desarrolla mecanismos para ampliar su alcance.",
+        ],
+      },
+      {
+        heading: "El desafío del financiamiento climático para el sector portuario",
+        paragraphs: [
+          "Los puertos ocupan una posición estratégica en las cadenas de comercio internacional y enfrentan simultáneamente dos grandes desafíos: reducir el impacto ambiental de sus operaciones y adaptarse a los efectos del cambio climático.",
+          "Esto abre oportunidades para desarrollar proyectos vinculados con la electrificación de equipos, el suministro de energía desde tierra a los buques, la incorporación de energías renovables, la eficiencia energética, la gestión de residuos, la infraestructura resiliente y la digitalización de procesos.",
+          "Sin embargo, cada una de estas iniciativas requiere una estructuración adecuada. No todas las inversiones tienen las mismas características ni pueden acceder a los mismos instrumentos financieros.",
+          "Es necesario identificar qué tipo de financiamiento resulta apropiado, cuáles son sus requisitos, qué componentes pueden ser financiados y cómo se integran los recursos de cooperación con la inversión pública o privada.",
+          "También es importante distinguir entre una inversión ambientalmente conveniente y una intervención que reúne los requisitos específicos de elegibilidad de un fondo climático. Son conceptos relacionados, pero no equivalentes.",
+        ],
+      },
+      {
+        heading: "De las oportunidades de financiamiento a los resultados concretos",
+        paragraphs: [
+          "La disponibilidad de recursos internacionales es una oportunidad, pero no constituye por sí misma una estrategia de desarrollo.",
+          "La diferencia entre una iniciativa que permanece en una presentación y un proyecto que llega a ejecutarse suele estar en la calidad de su preparación: diagnóstico, diseño técnico, estructura financiera, gobernanza, gestión de riesgos y capacidad de implementación.",
+          "En un contexto donde la transformación de los sistemas portuarios exige inversiones cada vez más complejas, estructurar proyectos financiables se convierte en una capacidad estratégica.",
+          "El desafío no consiste solamente en conseguir financiamiento, sino en desarrollar proyectos capaces de transformar esos recursos en resultados concretos, sostenibles y verificables.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const blogTopics = [
