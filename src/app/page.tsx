@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { formatBlogDate, getReadingMinutes, getSortedPosts, getTitleParts } from "@/data/blogPosts";
@@ -6,6 +7,13 @@ import styles from "./page.module.css";
 import blogStyles from "./blogPreview.module.css";
 import ContactForm from "./ContactForm";
 import { contact } from "@/data/contact";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  absoluteTitle: "NODUS | Consultoría portuaria estratégica en Argentina y Latinoamérica",
+  description: "Consultora portuaria para autoridades, operadores y terminales: master plans, concesiones y PPP, gobernanza, operación y transformación digital en Argentina y Latinoamérica.",
+  path: "/",
+});
 
 export default function Home() {
   const latestPosts = getSortedPosts().slice(0, 3);

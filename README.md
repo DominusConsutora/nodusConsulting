@@ -46,6 +46,16 @@ Los textos nuevos están en `messages/es.json` y `messages/en.json`. El formular
 - Google Analytics 4 debe configurarse dentro del contenedor de GTM. No agregar una etiqueta directa de GA4 que evite el control de consentimiento.
 - Antes de producción, confirmar el inventario real de cookies, su duración, la retención de GA4, el proveedor de alojamiento y las condiciones de transferencia aplicables.
 
+## SEO e indexación
+
+- Dominio canónico: `https://nodusconsulting.com.ar` (sin www). Se define en `src/data/site.ts`; si cambia, actualizar también `public/.htaccess`.
+- `src/lib/seo.tsx` arma los metadatos de cada página (canonical, Open Graph para LinkedIn y Twitter) y los datos estructurados schema.org (Organization, WebSite, BlogPosting, Service, ProfilePage, BreadcrumbList).
+- `sitemap.xml` y `robots.txt` se generan solos en el build a partir de `src/data/blogPosts.ts` y `src/data/services.ts`: una nota nueva entra al sitemap sin tocar nada más.
+- Imágenes para compartir: `npm run build` ejecuta antes `scripts/generate-og-images.mjs`, que crea en `public/og/` el JPG 1200x630 de cada nota nueva a partir de su `heroImage`. Para regenerarlas todas: `npm run og -- --force`.
+- Perfiles de LinkedIn: completar `sameAs` en `src/data/site.ts` (empresa y fundadores).
+- `public/.htaccess` fuerza https, quita www, agrega la barra final y sirve `404.html`. Requiere el certificado SSL activo en el hosting.
+- Después de publicar: dar de alta la propiedad en Google Search Console, enviar `https://nodusconsulting.com.ar/sitemap.xml` y validar las vistas previas con el Post Inspector de LinkedIn.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

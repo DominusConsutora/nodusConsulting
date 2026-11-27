@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import PolicyPage from "../PolicyPage";
 
-export const metadata: Metadata = {
-  title: "Política de privacidad y seguridad | NODUS",
+export const metadata: Metadata = pageMetadata({
+  title: "Política de privacidad y seguridad",
   description: "Cómo NODUS SRL trata y protege los datos personales al usar este sitio web.",
-};
+  path: "/privacidad",
+});
 
 const sections = [
   {

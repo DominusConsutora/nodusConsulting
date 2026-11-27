@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/data/services";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
-  title: "Servicios | NODUS",
-  description: "Servicios de consultoría portuaria estratégica para autoridades, operadores y terminales de Argentina y Latinoamérica.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Servicios de consultoría portuaria",
+  description: "Master plans, concesiones y PPP, gobernanza y tarifas, operación de terminales, transformación digital y sostenibilidad portuaria para Argentina y Latinoamérica.",
+  path: "/servicios",
+});
 
 export default function ServiciosPage() {
   return (

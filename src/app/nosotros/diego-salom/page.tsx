@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
+import { founders } from "@/data/site";
+import { JsonLd, breadcrumbJsonLd, pageMetadata, personJsonLd } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
-  title: "Diego Salom | Cofundador de NODUS",
-  description: "Trayectoria y especialización de Diego Salom, cofundador de NODUS y especialista en estrategia, gestión y desarrollo portuario.",
-};
+const founder = founders.find((item) => item.slug === "diego-salom")!;
+
+export const metadata: Metadata = pageMetadata({
+  title: "Diego Salom, cofundador de NODUS y consultor portuario",
+  description: "Trayectoria de Diego Salom, cofundador de NODUS y consultor de UNCTAD: planificación estratégica, concesiones y capacitación portuaria.",
+  path: "/nosotros/diego-salom",
+  image: "/og/diego-salom.jpg",
+  imageAlt: "Diego Salom, cofundador de NODUS",
+  type: "profile",
+});
 
 const career = [
   ["2026 - actualidad", "Consultor de UNCTAD", "Gestión portuaria, logística, vías navegables y fortalecimiento institucional."],
@@ -30,6 +38,7 @@ Extendió TRAINFORTRADE a más de 650 profesionales, impulsó el subprograma Pue
 export default function FounderPage() {
   return (
     <main>
+      <JsonLd data={[personJsonLd(founder), breadcrumbJsonLd([{ name: "Inicio", path: "/" }, { name: "Quiénes somos", path: "/nosotros" }, { name: "Diego Salom", path: "/nosotros/diego-salom" }])]} />
       <header className={styles.header}><Link href="/" className={styles.brand} aria-label="NODUS, inicio"><Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={170} height={60} priority /></Link><nav className={styles.nav} aria-label="Navegación principal"><Link href="/">Inicio</Link><Link href="/nosotros">Quiénes somos</Link><Link href="/servicios">Servicios</Link><Link href="/#metodo">Método</Link><Link href="/blog">Blog</Link><Link href="/#contacto" className={styles.navContact}>Contacto <span aria-hidden="true">↗</span></Link></nav></header>
 
       <section className={styles.profileHero}><Link href="/nosotros" className={styles.backLink}>← Volver a Sobre Nosotros</Link><div className={styles.profileHeroGrid}><div><p className={styles.kicker}>NODUS CONSULTING <span>/</span> COFUNDADOR</p><h1>Diego <em>Salom.</em></h1><p className={styles.role}>Cofundador de NODUS / Consultor de UNCTAD en Argentina</p></div><Image src="/brand/diego-salom-recorte.png" alt="Diego Salom, cofundador de NODUS" width={460} height={550} priority /></div></section>

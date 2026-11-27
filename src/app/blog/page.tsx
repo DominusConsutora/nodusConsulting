@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { getSortedPosts } from "@/data/blogPosts";
@@ -6,10 +7,11 @@ import BlogPostGrid from "./BlogPostGrid";
 import styles from "./page.module.css";
 import contentStyles from "./content.module.css";
 
-export const metadata: Metadata = {
-  title: "Blog | NODUS",
-  description: "Ideas, análisis y actualidad sobre desarrollo portuario, infraestructura y gestión en Argentina y Latinoamérica.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Blog de consultoría portuaria: análisis y tendencias",
+  description: "Análisis sobre planificación, concesiones, digitalización, talento y sostenibilidad portuaria en Argentina y Latinoamérica, escritos por el equipo de NODUS.",
+  path: "/blog",
+});
 
 export default function BlogPage() {
   const posts = getSortedPosts();

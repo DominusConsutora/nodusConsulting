@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import founderStyles from "./founders.module.css";
 
-export const metadata: Metadata = {
-  title: "Sobre Nosotros | NODUS",
-  description: "Conocé NODUS, consultora portuaria estratégica para autoridades, operadores y terminales de Argentina y Latinoamérica.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Quiénes somos: consultora portuaria estratégica",
+  description: "Conocé NODUS y a sus fundadores: consultora portuaria estratégica para autoridades, operadores y terminales de Argentina y Latinoamérica.",
+  path: "/nosotros",
+});
 
 const method = [
   ["01", "Escuchar", "Partimos del contexto real de cada institución, sin aplicar soluciones prefabricadas."],

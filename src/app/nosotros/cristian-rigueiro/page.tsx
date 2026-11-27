@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
+import { founders } from "@/data/site";
+import { JsonLd, breadcrumbJsonLd, pageMetadata, personJsonLd } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import profileStyles from "../diego-salom/page.module.css";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
-  title: "Cristian Rigueiro | Cofundador de NODUS",
-  description:
-    "Trayectoria de Cristian Rigueiro, cofundador de NODUS, abogado y especialista en gestión jurídica e institucional del sistema portuario.",
-};
+const founder = founders.find((item) => item.slug === "cristian-rigueiro")!;
+
+export const metadata: Metadata = pageMetadata({
+  title: "Cristian Rigueiro, cofundador de NODUS",
+  description: "Trayectoria de Cristian Rigueiro, cofundador de NODUS, abogado especializado en gestión jurídica e institucional del sistema portuario.",
+  path: "/nosotros/cristian-rigueiro",
+  image: "/og/cristian-rigueiro.jpg",
+  imageAlt: "Cristian Rigueiro, cofundador de NODUS",
+  type: "profile",
+});
 
 const career = [
   [
@@ -52,6 +59,7 @@ const expertise = [
 export default function CristianRigueiroPage() {
   return (
     <main>
+      <JsonLd data={[personJsonLd(founder), breadcrumbJsonLd([{ name: "Inicio", path: "/" }, { name: "Quiénes somos", path: "/nosotros" }, { name: "Cristian Rigueiro", path: "/nosotros/cristian-rigueiro" }])]} />
       <header className={profileStyles.header}>
         <Link href="/" className={profileStyles.brand} aria-label="NODUS, inicio">
           <Image src="/brand/logo-nodus.png" alt="NODUS Consulting" width={170} height={60} priority />

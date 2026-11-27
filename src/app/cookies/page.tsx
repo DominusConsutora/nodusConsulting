@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import PolicyPage from "../PolicyPage";
 
-export const metadata: Metadata = {
-  title: "Política de cookies y analítica | NODUS",
+export const metadata: Metadata = pageMetadata({
+  title: "Política de cookies y analítica",
   description: "Información sobre el almacenamiento local, las cookies opcionales y el consentimiento para analítica en el sitio de NODUS.",
-};
+  path: "/cookies",
+});
 
 const sections = [
   {
