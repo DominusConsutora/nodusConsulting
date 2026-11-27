@@ -1,0 +1,56 @@
+# NODUS - configuración Apache (DonWeb) para el sitio estático exportado por Next.js.
+# Objetivo SEO: una única URL por página -> https, sin "www" y con barra final.
+# Si el dominio definitivo cambia, actualizar también src/data/site.ts.
+
+Options -Indexes
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1a. www -> dominio sin www (siempre en https), en un solo salto 301.
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://nodusconsulting.com.ar%{REQUEST_URI} [L,R=301,NE]
+
+  # 1b. http -> https (contempla proxies que informan X-Forwarded-Proto).
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !^https$ [NC]
+  RewriteRule ^ https://nodusconsulting.com.ar%{REQUEST_URI} [L,R=301,NE]
+
+  # 2. /pagina/index.html -> /pagina/
+  RewriteCond %{THE_REQUEST} \s/+((?:[^\s?]*/)?)index\.html[\s?] [NC]
+  RewriteRule ^ /%1 [L,R=301,NE]
+
+  # 3. Barra final en páginas (no en archivos con extensión).
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,5}$
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^ %{REQUEST_URI}/ [L,R=301,NE]
+</IfModule>
+
+# Compresión de texto (mejora la velocidad, que influye en el ranking).
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType application/xml .xml
+  AddType text/plain .txt
+</IfModule>
+
+# Caché: archivos versionados de Next un año; imágenes un mes; HTML siempre revalidado.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.(webp|jpg|jpeg|png|svg|ico|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
